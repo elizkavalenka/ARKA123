@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "puppeteer browsers install chrome@131.0.6778.204 && vite build",
+    "build": "node scripts/ensure-prerender-chrome.mjs && puppeteer browsers install chrome@131.0.6778.204 && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
