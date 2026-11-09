@@ -10,6 +10,7 @@ import PricingSection from '@/components/PricingSection';
 import ReviewsSection from '@/components/ReviewsSection';
 import BookingSection from '@/components/BookingSection';
 import SiteFooter from '@/components/SiteFooter';
+import VirtualTourSection from './components/VirtualTourSection';
 import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage';
 
 function MainSite() {
@@ -28,6 +29,10 @@ function MainSite() {
         <AboutSection />
         <BrandStorySection />
         <ArchitectureSection />
+        <VirtualTourSection
+        poster="/images/arka-123-tour-cover.jpg"
+        tourSrc="/virtual-tour/index.html"
+        />
         <FacilitiesSection />
         <ScenariosSection />
         <ReviewsSection />

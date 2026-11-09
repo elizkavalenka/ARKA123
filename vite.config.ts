@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import prerender from '@prerenderer/rollup-plugin';
+// import prerender from '@prerenderer/rollup-plugin';
 import { fileURLToPath, URL } from 'node:url';
 
 // https://vitejs.dev/config/
@@ -25,14 +25,6 @@ import { fileURLToPath, URL } from 'node:url';
 export default defineConfig({
   plugins: [
     react(),
-    prerender({
-      routes: ['/', '/privacy'],
-      renderer: '@prerenderer/renderer-puppeteer',
-      rendererOptions: {
-        // Wait until the app has mounted before capturing markup.
-        renderAfterTime: 1500,
-      },
-    }),
   ],
   resolve: {
     alias: {
