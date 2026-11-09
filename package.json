@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "puppeteer browsers install chrome",
+    "prebuild": "node -e \"const fs=require('fs'),p=require('path'),o=require('os');fs.rmSync(p.join(process.env.PUPPETEER_CACHE_DIR||p.join(o.homedir(),'.cache','puppeteer'),'chrome'),{recursive:true,force:true})\" && puppeteer browsers install chrome",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
