@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arka123.by/sitemap.xml
+Sitemap: https://arka-123-by.vercel.app/sitemap.xml
