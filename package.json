@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/ensure-prerender-chrome.mjs && puppeteer browsers install chrome@131.0.6778.204 && vite build",
+    "build": "puppeteer browsers install chrome && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
@@ -29,7 +29,7 @@
     "eslint-plugin-react-refresh": "^0.4.11",
     "globals": "^15.9.0",
     "postcss": "^8.4.35",
-    "puppeteer": "^23.0.0",
+    "puppeteer": "^25.16.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
