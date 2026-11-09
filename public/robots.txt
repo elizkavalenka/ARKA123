@@ -1,0 +1,5 @@
+# ВАЖНО: замените https://arka123.by на реальный домен сайта
+User-agent: *
+Allow: /
+
+Sitemap: https://arka123.by/sitemap.xml

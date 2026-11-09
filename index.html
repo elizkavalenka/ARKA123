@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АРКА 123 — пространство для встреч в Минске</title>
+    <meta
+      name="description"
+      content="АРКА 123 — камерное пространство 123 м² на улице Мстиславца, 10 в Минске, напротив Национальной библиотеки. Лекции, мастер-классы, презентации и частные события."
+    />
+
+    <!-- Основная адаптивная иконка (переключается с темой) -->
+    <link rel="icon" href="/meta-images/favicon.svg" type="image/svg+xml">
+    <!-- Фолбэк для браузеров без SVG-иконок -->
+    <link rel="icon" href="/meta-images/favicon.ico" sizes="any">
+    <!-- Доп. PNG с медиазапросом (Safari/подстраховка) -->
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="/meta-images/favicon-light-32.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="/meta-images/favicon-dark-32.png"  media="(prefers-color-scheme: dark)">
+    <!-- iOS / Android -->
+    <link rel="apple-touch-icon" href="/meta-images/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ВАЖНО: замените https://arka123.by на реальный домен сайта -->
+    <link rel="canonical" href="https://arka123.by/" />
+
+    <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="ARKA 123" />
+        <meta property="og:locale" content="ru_RU" />
+        <meta property="og:url" content="https://arka123.by/" />
+        <meta property="og:title" content="АРКА 123 — пространство для встреч в Минске" />
+        <meta
+          property="og:description"
+          content="Камерное пространство 123 м² на улице Мстиславца, 10 в Минске, напротив Национальной библиотеки. Лекции, мастер-классы, презентации и частные события."
+        />
+        <meta property="og:image" content="https://arka123.by/meta-images/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:alt" content="АРКА 123 — вид на Национальную библиотеку из окна пространства" />
+
+        <!-- Twitter / X: остальные поля подтягиваются из og:* -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "ARKA 123",
+            "description": "Камерное пространство 123 м² для лекций, мастер-классов, презентаций и частных событий в центре Минска, напротив Национальной библиотеки.",
+            "url": "https://arka123.by/",
+            "image": "https://arka123.by/meta-images/og-image.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "ул. Мстиславца, 10",
+              "addressLocality": "Минск",
+              "addressCountry": "BY"
+            },
+            "areaServed": "Минск"
+          }
+        </script>
+  </head>
+  <body>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

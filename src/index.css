@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow-x: clip;
+  scroll-padding-top: 6rem;
+  scrollbar-gutter: stable;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.section-numbering {
+  counter-reset: section-number;
+}
+
+.section-eyebrow {
+  counter-increment: section-number;
+}
+
+.section-eyebrow::before {
+  content: counter(section-number, decimal-leading-zero) " — ";
+  color: #203642;
+}
+
+.brand-letter {
+  fill: rgb(255 255 255 / 0);
+  stroke: #fff;
+  stroke-width: 6;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation:
+    brand-letter-draw 600ms ease-in-out both,
+    brand-letter-fill 500ms ease-out both;
+}
+
+@keyframes brand-letter-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes brand-letter-fill {
+  to {
+    fill: rgb(255 255 255 / 1);
+  }
+}
+
+:root {
+  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #242321;
+  background: #F3EEE8;
+  font-synthesis: none;
+}
+html, body, #root { width: 100%; min-width: 320px; margin: 0; font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+*, *::before, *::after { font-family: inherit; }
+body { overflow-x: clip; }
+::selection { color: #F8F5F0; background: #203642; }
+
+/* Consistent keyboard focus affordance for interactive elements that do not
+   already declare their own focus-visible styling. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #203642;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Global safety net for users who ask the system to reduce motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
